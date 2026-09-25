@@ -1,6 +1,6 @@
 # RH Connect
 
-Plataforma web responsiva para preparação de candidatos para entrevistas de emprego, desenvolvida como projeto acadêmico no SENAC-DF.
+Plataforma web responsiva para preparação de candidatos para entrevistas de emprego, desenvolvida como projeto acadêmico no SENAC-Sobradinho.
 
 O projeto reúne um **Front-end React/Vite**, uma **API NestJS com PostgreSQL/Prisma** e um **serviço Python/Flask para processamento de entrevistas com IA**.
 
@@ -12,7 +12,7 @@ O projeto reúne um **Front-end React/Vite**, uma **API NestJS com PostgreSQL/Pr
 
 O RH Connect tem como objetivo oferecer um ambiente de preparação para entrevistas, permitindo que candidatos pratiquem respostas, recebam avaliação e acompanhem seu desenvolvimento.
 
-O projeto está **em desenvolvimento ativo**, como parte de um trabalho acadêmico. Partes do sistema já possuem integração real entre Front-end, Back-end e serviço de IA; outras áreas ainda estão em evolução e não devem ser consideradas produção-ready.
+O projeto está **em desenvolvimento ativo**, como parte de um trabalho acadêmico.
 
 ---
 
@@ -38,7 +38,7 @@ O sistema é organizado em três camadas principais:
               │                                         │
               │                              Parser de vaga + Groq
               │
-              └────────────── HTTP ────────────────────┘
+              └────────────── HTTPS ────────────────────┘
 ```
 
 **Front-end** — interface do candidato, avaliador e administrador, com navegação por rotas e fluxos de entrevista.
@@ -109,35 +109,7 @@ O projeto possui integração com recursos externos de aprendizagem, com catálo
 
 ---
 
-## 7. Estrutura do repositório
-
-```text
-rh-connect/
-├── apps/
-│   ├── web/                         # Front-end React/Vite
-│   └── api/                         # Back-end NestJS
-│       └── prisma/                  # Schema, migrations e seeds
-│
-├── services/
-│   └── interview-ai-python/         # Serviço Flask + parser + Groq
-│
-├── packages/
-│   ├── config/
-│   ├── types/
-│   ├── ui/
-│   └── validation/
-│
-├── docs/
-├── guidelines/
-├── .github/workflows/
-├── package.json
-├── pnpm-workspace.yaml
-└── README.md
-```
-
----
-
-## 8. Requisitos locais
+## 7. Requisitos locais
 
 - Node.js compatível com o ambiente do projeto;
 - pnpm;
